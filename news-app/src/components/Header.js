@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from "react-router-dom";
+import NewsList from './NewsList'
 
 export default function Header() {
     function refreshPage(){
@@ -23,11 +25,15 @@ export default function Header() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
+             <Link to='/'>
             <MenuIcon />
+            </Link>
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+         
+          <Typography variant="h6"  sx={{ flexGrow: 2 }}>
             News
           </Typography>
+         
           <Button color="inherit" onClick={refreshPage}>Refresh</Button>
         </Toolbar>
       </AppBar>

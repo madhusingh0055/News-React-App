@@ -5,6 +5,7 @@ import axios from "axios";
 import NewsCard from "./NewsCard";
 import { useSlotProps } from "@mui/base";
 import Header from "./Header";
+import './NewsList.css';
 
 const NewsList = () => 
 {
@@ -45,9 +46,9 @@ var news = []
 
 
     return(
-        <div>
-
-            <Header />
+     <div>
+          <Header />
+          <div className="wrapper">
 
             <br />
 
@@ -68,9 +69,11 @@ var news = []
                 )
             }
 
-            <div>
+            <div className="pagination">
             <Pagination count={pages} hidePrevButton hideNextButton onClick={handleClick}/>
             </div>
+            </div>
+            
         </div>
     )
 }

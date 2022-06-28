@@ -14,7 +14,7 @@ export default function NewsCard(props) {
     
     var title = props.title;
     var urlToImage = props.urlToImage;
-    var content = props.content;
+    var content = props.description;
 
 
   return (
@@ -24,10 +24,10 @@ export default function NewsCard(props) {
     <div className='card-info'>
       <Card sx={{ maxWidth: 345 }}>
    
-   <CardMedia
+   <CardMedia className='card-img'
      component="img"
      alt="green iguana"
-     height="200"
+     height="250"
      image={props.urlToImage}
    />
    
@@ -46,9 +46,12 @@ export default function NewsCard(props) {
      </Typography>
    </CardContent>
    <CardActions>
-    <Link to='/news' state={{ from: {title,urlToImage,content} }} className="link">
+    {/* <Link to='/news' state={{ from: {title,urlToImage,content} }} className="link">
     <Button size="small">Read More</Button>
-    </Link>
+    </Link> */}
+    <a href={props.url} target="_blank" rel="noreferrer">
+    <Button size="small">Read More</Button>
+    </a>
    </CardActions>
  </Card>
     </div>

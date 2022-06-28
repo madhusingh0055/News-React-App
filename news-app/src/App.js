@@ -2,7 +2,7 @@
 import './App.css';
 import NewsCard from './components/NewsCard';
 import NewsList from './components/NewsList'
-import CardInformation from './components/CardInformation';
+import CardInformation from './components/NewsInformation';
 import {BrowserRouter as Router,Routes, Route,  Link} from 'react-router-dom';
 
 
