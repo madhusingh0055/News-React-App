@@ -33,7 +33,7 @@ export default function NewsCard(props) {
    
     <CardContent>
     <a href={props.url} target="_blank" rel="noreferrer">
-     <Typography gutterBottom variant="h5" component="div" >
+     <Typography gutterBottom variant="h5" component="div" className='card-text'>
      {props.title}
      </Typography>
      </a>
@@ -41,7 +41,7 @@ export default function NewsCard(props) {
      <Typography>
          {props.publishedAt}
      </Typography>
-     <Typography variant="body2" color="text.secondary" className='desc'>
+     <Typography variant="body2" color="text.secondary" className='card-text'>
       {props.description}
      </Typography>
    </CardContent>
