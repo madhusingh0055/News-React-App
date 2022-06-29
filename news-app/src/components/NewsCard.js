@@ -15,6 +15,7 @@ export default function NewsCard(props) {
     var title = props.title;
     var urlToImage = props.urlToImage;
     var content = props.description;
+    var url = props.url;
 
 
   return (
@@ -32,11 +33,11 @@ export default function NewsCard(props) {
    />
    
     <CardContent>
-    <a href={props.url} target="_blank" rel="noreferrer">
+    
      <Typography gutterBottom variant="h5" component="div" className='card-text'>
      {props.title}
      </Typography>
-     </a>
+    
      <Chip label={autorname} ></Chip>
      <Typography>
          {props.publishedAt}
@@ -46,12 +47,14 @@ export default function NewsCard(props) {
      </Typography>
    </CardContent>
    <CardActions>
-    {/* <Link to='/news' state={{ from: {title,urlToImage,content} }} className="link">
+    <Link to='/news' state={{ from: {url} }} className="link">
     <Button size="small">Read More</Button>
-    </Link> */}
-    <a href={props.url} target="_blank" rel="noreferrer">
+    </Link>
+
+    {/* <a href={props.url} target="_blank" rel="noreferrer">
     <Button size="small">Read More</Button>
-    </a>
+    </a> */}
+   
    </CardActions>
  </Card>
     </div>

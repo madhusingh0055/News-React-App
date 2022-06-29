@@ -14,7 +14,7 @@ const NewsList = () =>
     const[offset,setOffset] = useState(1)
     const[pages, setPages] = useState();
     
-    const perpage = 4;
+    const perpage = 8;
  
     
     const url = "https://newsapi.org/v2/everything?q=apple&from=2022-06-26&to=2022-06-26&sortBy=popularity&apiKey=f8b2a7f2ef864802ab2cb5348ea82b47"

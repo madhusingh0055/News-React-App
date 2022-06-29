@@ -2,7 +2,7 @@
 import './App.css';
 import NewsCard from './components/NewsCard';
 import NewsList from './components/NewsList'
-import CardInformation from './components/NewsInformation';
+import ShowNews from './components/ShowNews';
 import {BrowserRouter as Router,Routes, Route,  Link} from 'react-router-dom';
 
 
@@ -13,7 +13,7 @@ function App() {
      <Router>
       <Routes>
          <Route path="/" element={<NewsList />}></Route>
-          <Route path="/news" element={<CardInformation />} />
+          <Route path="/news" element={<ShowNews />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         
       </Routes>
