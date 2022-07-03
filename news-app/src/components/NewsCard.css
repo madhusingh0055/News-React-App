@@ -9,6 +9,9 @@
 .card-text{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 
